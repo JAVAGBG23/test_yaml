@@ -36,3 +36,6 @@ jobs:
       - name: Run unit tests
         run: mvn test -X
 
+      - name: List Surefire Reports
+        run: ls -R target/surefire-reports
+
