@@ -1,0 +1,4 @@
+# application-test.yml
+spring:
+  main:
+    allow-bean-definition-overriding: true  # Just in case you have multiple definitions
