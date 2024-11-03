@@ -34,4 +34,5 @@ jobs:
         run: mvn clean compile
 
       - name: Run unit tests
-        run: mvn test -e
+        run: mvn test -X
+
