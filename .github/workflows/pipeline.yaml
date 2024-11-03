@@ -33,9 +33,5 @@ jobs:
       - name: Build with Maven
         run: mvn clean compile
 
-      - name: Run unit tests
-        run: mvn test -X
-
-      - name: List Surefire Reports
-        run: ls -R target/surefire-reports
-
+      - name: Run tests with Maven
+        run: mvn -B test --file pom.xml
