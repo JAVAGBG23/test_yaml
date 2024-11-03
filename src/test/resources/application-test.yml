@@ -4,3 +4,4 @@ spring:
     allow-bean-definition-overriding: true  # Just in case you have multiple definitions
 jwt:
   secret: hfaiehfisehfosndfejndfeswljrfeowfnjehwbewios4ngvhtrwglp4rkledf
+  expirationMs: 36000000
