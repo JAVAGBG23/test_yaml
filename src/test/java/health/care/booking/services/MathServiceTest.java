@@ -6,11 +6,16 @@ import org.mockito.InjectMocks;
 import org.mockito.MockitoAnnotations;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.ActiveProfiles;
+import org.springframework.test.context.TestPropertySource;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 @SpringBootTest
-@ActiveProfiles("test")
+@ActiveProfiles("test")  // Activate the test profile
+@TestPropertySource(properties = {
+        "jwt.secret=hfaiehfisehfosndfejndfeswljrfeowfnjehwbewios4ngvhtrwglp4rkledf",
+        "jwt.expirationMs=36000000"
+})
 public class MathServiceTest {
 
         @InjectMocks
