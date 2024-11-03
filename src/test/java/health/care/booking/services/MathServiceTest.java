@@ -1,6 +1,5 @@
-package health.care.booking;
+package health.care.booking.services;
 
-import health.care.booking.services.MathService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.InjectMocks;
